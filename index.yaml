@@ -1,9 +1,41 @@
 apiVersion: v1
 entries:
+  jenkins:
+  - apiVersion: v1
+    appVersion: lts
+    created: "2020-08-18T16:16:52.472847+08:00"
+    description: Open source continuous integration server. It supports multiple SCM
+      tools including CVS, Subversion and Git. It can execute Apache Ant and Apache
+      Maven-based projects as well as arbitrary scripts.
+    digest: 8d24bf500f269229f72cf24ed5a82c43f39a20e579ecdbbeaf7efb0a701c181c
+    home: https://jenkins.io/
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    maintainers:
+    - email: lachlan.evenson@microsoft.com
+      name: lachie83
+    - email: viglesias@google.com
+      name: viglesiasce
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    - email: mail@torstenwalter.de
+      name: torstenwalter
+    - email: garridomota@gmail.com
+      name: mogaal
+    - email: wmcdona89@gmail.com
+      name: wmcdona89
+    name: jenkins
+    sources:
+    - https://github.com/jenkinsci/jenkins
+    - https://github.com/jenkinsci/docker-jnlp-slave
+    - https://github.com/maorfr/kube-tasks
+    - https://github.com/jenkinsci/configuration-as-code-plugin
+    urls:
+    - jenkins-2.5.0.tgz
+    version: 2.5.0
   metrics-server:
   - apiVersion: v1
     appVersion: 0.3.6
-    created: "2020-08-18T13:35:06.598915+08:00"
+    created: "2020-08-18T16:16:52.474388+08:00"
     description: Metrics Server is a cluster-wide aggregator of resource usage data.
     digest: d9b81b98e47d06e35ea4ca916864ed5db7384cb225982339772dbc5efd7642e4
     home: https://github.com/kubernetes-incubator/metrics-server
@@ -23,7 +55,7 @@ entries:
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2020-08-18T13:35:06.600493+08:00"
+    created: "2020-08-18T16:16:52.475971+08:00"
     description: nfs-client is an automatic provisioner that used your *already configured*
       NFS server, automatically creating Persistent Volumes.
     digest: bbb790627397f5913170aaa5e71a7eedb35b3b74733db4238ffc481d5dd83073
@@ -43,7 +75,7 @@ entries:
   nginx-ingress:
   - apiVersion: v1
     appVersion: v0.34.1
-    created: "2020-08-18T13:35:06.603379+08:00"
+    created: "2020-08-18T16:16:52.479047+08:00"
     description: An nginx Ingress controller that uses ConfigMap to store the nginx
       configuration.
     digest: 47a3250b7916423642e5ce4fd04c279b9d59a54f545e683f32b79d54b9b1f8e3
@@ -66,7 +98,7 @@ entries:
   prometheus-operator:
   - apiVersion: v1
     appVersion: 0.38.1
-    created: "2020-08-18T13:35:06.627323+08:00"
+    created: "2020-08-18T16:16:52.50064+08:00"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -104,11 +136,11 @@ entries:
   sample-app:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-08-18T13:35:06.628453+08:00"
+    created: "2020-08-18T16:16:52.502103+08:00"
     description: A Helm chart for Kubernetes
     digest: 78f740ed741b84d91127e251f52f6fade086a633ffcf5e7a6358c170d0789fed
     name: sample-app
     urls:
     - sample-app-0.1.0.tgz
     version: 0.1.0
-generated: "2020-08-18T13:35:06.595542+08:00"
+generated: "2020-08-18T16:16:52.466873+08:00"
