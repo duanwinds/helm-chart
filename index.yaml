@@ -3,7 +3,7 @@ entries:
   metrics-server:
   - apiVersion: v1
     appVersion: 0.3.6
-    created: "2020-08-17T17:13:02.480469+08:00"
+    created: "2020-08-18T10:41:53.132476+08:00"
     description: Metrics Server is a cluster-wide aggregator of resource usage data.
     digest: d9b81b98e47d06e35ea4ca916864ed5db7384cb225982339772dbc5efd7642e4
     home: https://github.com/kubernetes-incubator/metrics-server
@@ -20,10 +20,30 @@ entries:
     urls:
     - metrics-server-2.11.1.tgz
     version: 2.11.1
+  nfs-client-provisioner:
+  - apiVersion: v1
+    appVersion: 3.1.0
+    created: "2020-08-18T10:41:53.134697+08:00"
+    description: nfs-client is an automatic provisioner that used your *already configured*
+      NFS server, automatically creating Persistent Volumes.
+    digest: bbb790627397f5913170aaa5e71a7eedb35b3b74733db4238ffc481d5dd83073
+    home: https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    keywords:
+    - nfs
+    - storage
+    maintainers:
+    - email: bart@verwilst.be
+      name: verwilst
+    name: nfs-client-provisioner
+    sources:
+    - https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    urls:
+    - nfs-client-provisioner-1.2.9.tgz
+    version: 1.2.9
   prometheus-operator:
   - apiVersion: v1
     appVersion: 0.38.1
-    created: "2020-08-17T17:13:02.502041+08:00"
+    created: "2020-08-18T10:41:53.155588+08:00"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -61,11 +81,11 @@ entries:
   sample-app:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-08-17T17:13:02.502809+08:00"
+    created: "2020-08-18T10:41:53.156903+08:00"
     description: A Helm chart for Kubernetes
     digest: 78f740ed741b84d91127e251f52f6fade086a633ffcf5e7a6358c170d0789fed
     name: sample-app
     urls:
     - sample-app-0.1.0.tgz
     version: 0.1.0
-generated: "2020-08-17T17:13:02.479516+08:00"
+generated: "2020-08-18T10:41:53.130543+08:00"
