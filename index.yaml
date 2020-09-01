@@ -3,7 +3,7 @@ entries:
   jenkins:
   - apiVersion: v1
     appVersion: lts
-    created: "2020-08-26T15:06:47.977962+08:00"
+    created: "2020-09-02T00:06:07.547114+08:00"
     description: Open source continuous integration server. It supports multiple SCM
       tools including CVS, Subversion and Git. It can execute Apache Ant and Apache
       Maven-based projects as well as arbitrary scripts.
@@ -35,7 +35,7 @@ entries:
   metrics-server:
   - apiVersion: v1
     appVersion: 0.3.6
-    created: "2020-08-26T15:06:47.979512+08:00"
+    created: "2020-09-02T00:06:07.548733+08:00"
     description: Metrics Server is a cluster-wide aggregator of resource usage data.
     digest: d9b81b98e47d06e35ea4ca916864ed5db7384cb225982339772dbc5efd7642e4
     home: https://github.com/kubernetes-incubator/metrics-server
@@ -55,7 +55,7 @@ entries:
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2020-08-26T15:06:47.980883+08:00"
+    created: "2020-09-02T00:06:07.549293+08:00"
     description: nfs-client is an automatic provisioner that used your *already configured*
       NFS server, automatically creating Persistent Volumes.
     digest: bbb790627397f5913170aaa5e71a7eedb35b3b74733db4238ffc481d5dd83073
@@ -75,7 +75,7 @@ entries:
   nginx-ingress:
   - apiVersion: v1
     appVersion: v0.34.1
-    created: "2020-08-26T15:06:47.98476+08:00"
+    created: "2020-09-02T00:06:07.551583+08:00"
     description: An nginx Ingress controller that uses ConfigMap to store the nginx
       configuration.
     digest: 47a3250b7916423642e5ce4fd04c279b9d59a54f545e683f32b79d54b9b1f8e3
@@ -98,7 +98,7 @@ entries:
   prometheus-operator:
   - apiVersion: v1
     appVersion: 0.38.1
-    created: "2020-08-26T15:06:48.005239+08:00"
+    created: "2020-09-02T00:06:07.571236+08:00"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -136,7 +136,7 @@ entries:
   redis:
   - apiVersion: v1
     appVersion: 5.0.7
-    created: "2020-08-26T15:06:48.007774+08:00"
+    created: "2020-09-02T00:06:07.5735+08:00"
     deprecated: true
     description: DEPRECATED Open source, advanced key-value store. It is often referred
       to as a data structure server since keys can contain strings, hashes, lists,
@@ -157,11 +157,20 @@ entries:
   sample-app:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-08-26T15:06:48.009134+08:00"
+    created: "2020-09-02T00:06:07.575121+08:00"
+    description: A Helm chart for Kubernetes
+    digest: be71b37e5142d6d36521b6d288e7207b1d235387b246f62fbd5934a7fb74fdf1
+    name: sample-app
+    urls:
+    - sample-app-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-09-02T00:06:07.574123+08:00"
     description: A Helm chart for Kubernetes
     digest: 78f740ed741b84d91127e251f52f6fade086a633ffcf5e7a6358c170d0789fed
     name: sample-app
     urls:
     - sample-app-0.1.0.tgz
     version: 0.1.0
-generated: "2020-08-26T15:06:47.973713+08:00"
+generated: "2020-09-02T00:06:07.543668+08:00"
